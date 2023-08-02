@@ -1,0 +1,51 @@
+Hall Booking API
+
+1. Creating a room with  - POST
+
+API ENDPOINT URL - https://hallbooking-98az.onrender.com/rooms/create
+
+SAMPLE BODY DATA:
+
+/*
+
+{
+      "roomName": "Colosseum",
+  "bookedStatus":true ,
+  "seatsCount": 1000,
+  "Amenties": ["Personal care","Coffee Kit","Tissue box","Bathrobes"],
+  "priceForhour": 10000
+  }
+
+*/
+
+2. Booking a room with - POST
+
+API ENDPOINT URL - https://hallbooking-98az.onrender.com/bookings/book
+
+SAMPLE BODY DATA:
+
+/*
+
+{
+    "customerName":"Anbu" ,
+  "bookingDate":"2023-08-02T00:00:00.000Z",
+  "startTime":"2023-08-05T09:30:00.000+00:00",
+  "endTime": "2023-08-06T09:30:00.000+00:00",
+  "roomId":"64ca10b069ed30c3a44b2003"
+  }
+
+  */
+
+  3. LIST ALL ROOMS WITH BOOKED DATA WIHT SOME FIELDS - GET
+  
+  API ENDPOINT URL - https://hallbooking-98az.onrender.com/bookings/ 
+
+
+4. LIST ALL CUSTOMERS WITH BOOKED DATA WITH SOME FIELDS - GET
+
+API ENDPOINT URL - https://hallbooking-98az.onrender.com/customers/
+
+
+5. LIST HOW MANY TIMES A CUSTOMER HAS BOOKED THE ROOM WIHT SOME DETAILS
+
+API ENDPOINT URL - https://hallbooking-98az.onrender.com/bookings/all
